@@ -64,6 +64,10 @@
 		DDF93F59252D585C00C6A4DC /* PINOperation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDF93F58252D585C00C6A4DC /* PINOperation.framework */; };
 		DDF93F5D252D586100C6A4DC /* PINOperation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDF93F5C252D586100C6A4DC /* PINOperation.framework */; };
 		DDF93F61252D587100C6A4DC /* PINOperation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDF93F60252D587100C6A4DC /* PINOperation.framework */; };
+		FD271E7925CC6F330078BB8D /* dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD271E7825CC6F330078BB8D /* dummy.swift */; };
+		FD271E7A25CC6F330078BB8D /* dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD271E7825CC6F330078BB8D /* dummy.swift */; };
+		FD271E7B25CC6F330078BB8D /* dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD271E7825CC6F330078BB8D /* dummy.swift */; };
+		FD271E7C25CC6F330078BB8D /* dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD271E7825CC6F330078BB8D /* dummy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -155,6 +159,7 @@
 		DDF93F58252D585C00C6A4DC /* PINOperation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PINOperation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDF93F5C252D586100C6A4DC /* PINOperation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PINOperation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDF93F60252D587100C6A4DC /* PINOperation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PINOperation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD271E7825CC6F330078BB8D /* dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dummy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -264,6 +269,7 @@
 			isa = PBXGroup;
 			children = (
 				CC0106441E281B0E00890935 /* Info.plist */,
+				FD271E7825CC6F330078BB8D /* dummy.swift */,
 				6928EED21E4160EE00B5D975 /* PINCaching.h */,
 				CC0106051E271A9000890935 /* PINCache.h */,
 				CC0106061E271A9000890935 /* PINCache.m */,
@@ -499,16 +505,20 @@
 				TargetAttributes = {
 					320117A024444DF7004FD783 = {
 						CreatedOnToolsVersion = 11.4;
+						LastSwiftMigration = 1240;
 						ProvisioningStyle = Automatic;
 					};
 					CC0105B01E271A1600890935 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 1240;
 					};
 					CC0105C01E271A4000890935 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 1240;
 					};
 					CC0105CD1E271A4900890935 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 1240;
 					};
 					CC0105D91E271A5C00890935 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -606,6 +616,7 @@
 			files = (
 				320117C724444E3D004FD783 /* PINCache.m in Sources */,
 				320117CC24444E3D004FD783 /* PINMemoryCache.m in Sources */,
+				FD271E7C25CC6F330078BB8D /* dummy.swift in Sources */,
 				320117CA24444E3D004FD783 /* PINDiskCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -615,6 +626,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC01060E1E271A9500890935 /* PINCache.m in Sources */,
+				FD271E7925CC6F330078BB8D /* dummy.swift in Sources */,
 				CC0106101E271A9500890935 /* PINMemoryCache.m in Sources */,
 				C38F01AB20A32E0200F47F0E /* PINDiskCache+PINCacheTests.m in Sources */,
 				CC01060F1E271A9500890935 /* PINDiskCache.m in Sources */,
@@ -627,6 +639,7 @@
 			files = (
 				CC0106111E271A9600890935 /* PINCache.m in Sources */,
 				CC0106131E271A9600890935 /* PINMemoryCache.m in Sources */,
+				FD271E7A25CC6F330078BB8D /* dummy.swift in Sources */,
 				CC0106121E271A9600890935 /* PINDiskCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -637,6 +650,7 @@
 			files = (
 				CC0106141E271A9700890935 /* PINCache.m in Sources */,
 				CC0106161E271A9700890935 /* PINMemoryCache.m in Sources */,
+				FD271E7B25CC6F330078BB8D /* dummy.swift in Sources */,
 				CC0106151E271A9700890935 /* PINDiskCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -695,6 +709,7 @@
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_STYLE = Automatic;
@@ -713,6 +728,8 @@
 				PRODUCT_NAME = PINCache;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
@@ -724,6 +741,7 @@
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_STYLE = Automatic;
@@ -741,6 +759,7 @@
 				PRODUCT_NAME = PINCache;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
@@ -864,6 +883,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -880,6 +900,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -887,6 +909,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -903,6 +926,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -910,6 +934,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -926,6 +951,8 @@
 				PRODUCT_NAME = PINCache;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
@@ -935,6 +962,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -951,6 +979,7 @@
 				PRODUCT_NAME = PINCache;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
@@ -960,6 +989,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -979,6 +1009,8 @@
 				PRODUCT_NAME = PINCache;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -986,6 +1018,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -1005,12 +1038,14 @@
 				PRODUCT_NAME = PINCache;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
 		CC0105E31E271A5C00890935 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pinterest.PINCacheTests;
@@ -1021,6 +1056,7 @@
 		CC0105E41E271A5C00890935 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pinterest.PINCacheTests;
@@ -1031,6 +1067,7 @@
 		CC0105F21E271A6400890935 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pinterest.PINCache-tvOSTests";
@@ -1043,6 +1080,7 @@
 		CC0105F31E271A6400890935 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pinterest.PINCache-tvOSTests";
@@ -1055,6 +1093,7 @@
 		CC0106011E271A7300890935 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1073,6 +1112,7 @@
 		CC0106021E271A7300890935 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
